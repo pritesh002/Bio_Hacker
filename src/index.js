@@ -1,3 +1,4 @@
+// File: src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
@@ -10,4 +11,4 @@ function Index() {
   );
 }
 
-ReactDOM.render(<Index />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
