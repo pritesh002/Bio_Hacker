@@ -11,4 +11,4 @@ function Index() {
   );
 }
 
-ReactDOM.render(<Index />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
