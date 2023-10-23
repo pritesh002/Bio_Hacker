@@ -1,11 +1,11 @@
 // src/App.js
 
-import React from 'react';
+import React from "react";
 
 function App() {
   return (
     <div>
-      {/* Your JSX code for the main application component */}
+      <h1 style={{ color: "red" }}>bio hacker</h1>
     </div>
   );
 }
