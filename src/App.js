@@ -1,11 +1,11 @@
 // src/App.js
 
-import React from 'react';
+import React from "react";
 
 function App() {
   return (
     <div>
-      <h1 style={{ color: 'red' }}>bio hacker</h1>
+      <h1 style={{ color: "red" }}>bio hacker</h1>
     </div>
   );
 }
