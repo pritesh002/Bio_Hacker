@@ -1,10 +1,10 @@
 // File: src/components/Signup.js
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Signup() {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -38,7 +38,11 @@ function Signup() {
       <br />
       <label>
         Password:
-        <input type="password" value={password} onChange={handlePasswordChange} />
+        <input
+          type="password"
+          value={password}
+          onChange={handlePasswordChange}
+        />
       </label>
       <br />
       <button type="submit">Sign Up</button>
