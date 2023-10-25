@@ -14,23 +14,23 @@ function Login() {
   };
 
   const handleSubmit = async (event) => {
-      event.preventDefault();
-      try {
-          const response = await fetch("/login", {
-              method: "POST",
-              headers: {
-                  "Content-Type": "application/json"
-              },
-              body: JSON.stringify({ username, password })
-          });
-          if (response.ok) {
-              // Handle successful login
-          } else {
-              // Handle login error
-          }
-      } catch (error) {
-          // Handle network error
+    event.preventDefault();
+    try {
+      const response = await fetch("/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ username, password }),
+      });
+      if (response.ok) {
+        // Handle successful login
+      } else {
+        // Handle login error
       }
+    } catch (error) {
+      // Handle network error
+    }
   };
 
   return (
