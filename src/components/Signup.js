@@ -21,20 +21,20 @@ function Signup() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-        const response = await fetch("/signup", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ username, email, password })
-        });
-        if (response.ok) {
-            // Handle successful signup
-        } else {
-            // Handle signup error
-        }
+      const response = await fetch("/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ username, email, password }),
+      });
+      if (response.ok) {
+        // Handle successful signup
+      } else {
+        // Handle signup error
+      }
     } catch (error) {
-        // Handle network error
+      // Handle network error
     }
   };
 
