@@ -1,9 +1,9 @@
 // File: src/components/Login.js
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Login() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -28,7 +28,11 @@ function Login() {
       <br />
       <label>
         Password:
-        <input type="password" value={password} onChange={handlePasswordChange} />
+        <input
+          type="password"
+          value={password}
+          onChange={handlePasswordChange}
+        />
       </label>
       <br />
       <button type="submit">Login</button>
