@@ -1,11 +1,22 @@
 // src/App.js
 
-import React from 'react';
+import React, { useState } from "react";
+import Signup from "./components/Signup";
+import Login from "./components/Login";
 
 function App() {
+  const [isSignupPage, setIsSignupPage] = useState(true);
+
+  const handlePageChange = () => {
+    setIsSignupPage(!isSignupPage);
+  };
+
   return (
     <div>
-      {/* Your JSX code for the main application component */}
+      {isSignupPage ? <Signup /> : <Login />}
+      <button onClick={handlePageChange}>
+        {isSignupPage ? "Go to Login" : "Go to Signup"}
+      </button>
     </div>
   );
 }
